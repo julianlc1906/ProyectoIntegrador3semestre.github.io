@@ -1,0 +1,936 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+}
+:root{
+    --color-text: #777777;
+
+}
+body {
+    background-color: #ffffff;
+
+}
+/*menu */
+.header {
+
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.3)0%, rgba(0, 0, 0, 0.8)100%), url(/imgs/hero.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.head1 {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+.logo {
+    height: 200px;
+    cursor: pointer;
+}
+.logo img{
+    display: block;
+    /* height: 130px; */
+    width: auto;
+    transition: all 0.3s;
+    margin-left: 65px;
+    margin-top: 30px;
+    height: 60px;
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+    transition:all 0.2s;
+}
+.enlaces a{
+    text-transform: none;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+li {
+    display: inline-block;
+}
+.enlaces li{
+    padding: 15px 35px;
+}
+.enlaces li:hover {
+    transform: scale(1.2);
+    
+}
+/* .enlaces a:hover {
+    color:#0478fc;
+} */
+.direc {
+    padding-right: 35px;
+}
+nav {
+    margin: 0px 40px;
+}
+.enlaces2 {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    margin: -40px 55px 0;
+    border-top: 1px solid #ffffff;
+}
+.enlaces2 a{
+    text-transform: none;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.enlaces2 li:hover {
+    border-top:  2px solid #ffffff;
+}
+
+
+/* HERO */
+
+.contenedor-2{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contenedor-2 h1{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ffffff;
+   justify-content: end;
+   margin-top: -30px;
+   margin-bottom: 20px;
+}
+.contenedor-2 p{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.btn button {
+    font-weight: 700;
+    color: #0478fc;
+    padding: 9px 35px;
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 40px;
+    margin-left: 30px;
+    
+}
+.btn button:hover{
+    background-color: #0478fc;
+    transform: scale(1.1);
+    color:#ffffff;
+}
+
+.bar1 {
+     display: block;
+    margin: -55px auto 0;
+    width: 1000px;
+    height: 100px;
+    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px #777777;
+   
+   
+} 
+.bar1 ul {
+    list-style: none;
+    margin:  0;
+    padding: 0;
+}
+.bar1 ul li {
+display: inline-block;
+justify-content: space-between ; 
+/* margin-top:7%; */
+
+
+}
+.bar1 ul li a {
+    padding: 40px 15px;
+    transition:all 0.2s;
+
+    
+}
+.bar ul li::target-text {
+    transition: 0.1ms;
+}
+
+   
+.bar1 a {
+    text-transform: none;
+    font-size: 25px;
+    color: #0478fc;
+    text-decoration: none;
+}
+
+ .bar1 li:not(.hibir) {
+    border-right: 1px solid #0478fc; 
+ }
+ .bar1 li:hover {
+    background-color: #0478fc;
+    height:100px;
+   margin-top: none;
+   color: #ffffff;
+   transform: scale(1.1);
+   
+ }
+ .bar1 li a:hover {
+    color: #ffffff;
+ }
+
+/* Descripcion */
+
+.desc {
+    margin:auto;
+    width: 100%;
+    height: 600px;
+    background-color:#fff;
+    position: relative;
+    top: 6px;
+}
+
+.desc .info-img {
+width: 60%;
+height: 80%;
+position: absolute;
+box-sizing: border-box;
+top: 5%;
+left: 0;
+background:url(/imgs/quienes\ somos.jpeg);
+background-position: center;
+    background-size: cover;
+}
+.info-txt {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 10px;
+    background-color: #ffffff;
+    width: 38%;
+    height: 60%;
+    justify-content: space-between;
+text-align: center;
+display: flex;
+flex-direction: column;
+position: absolute;
+
+}
+.info-txt h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+.info-txt p{
+    font-family: 'Pathway Gothic One', sans-serif;
+
+}
+
+/* historia */
+.desc2 {
+    
+    margin:auto;
+    width: 100%;
+    height: 800px;
+    background:#777777;
+    position: relative;
+}
+.info-img2 {
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    box-sizing: border-box;
+    top: 5%;
+    right: 10%;
+    background:url(/imgs/Historia2.png);
+    background-position: center;
+    background-size: cover;
+    }
+    .info-txt2 {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        background-color: #777777;
+        width: 90%;
+        height: 50%;
+        justify-content: space-between;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+
+       
+    }
+    .info-txt2 p{
+        font-family: 'Pacifico', cursive;      
+     color: #0a141d;
+    }
+    .info-txt2 p::first-letter{
+        font-size: 55px;
+        float: left;
+    }
+    .btn2 {
+        position: absolute;
+        bottom: 10%;
+       right: 43%;
+       
+    }
+    .btn2 button {
+        font-weight: 700;
+        color: #0478fc;
+        padding: 9px 35px;
+        background: #ffffff;
+        border: none;
+        /* border-radius: 10px; */
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        margin-right: 40px;
+        margin-left: 30px;
+        box-shadow: 0px 1px 1px #777777
+        
+    }
+    .btn2 button:hover{
+        background-color: #0478fc;
+        transform: scale(1.1);
+        color:#ffffff;
+    }
+
+    /* Mision/ vision/ valores etc */
+
+    .tarje{
+        width: 100%;
+        height: 530px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto ;
+        background-color: #777777;
+    }
+    .tarje .tarjets {
+        width: 330px;
+        height: 430px;
+        border-radius:8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.25s;
+        margin: 40px 20px;
+        background-color: #fff;
+
+    }
+    .tarje .tarjets:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+    .tarje .tarjets img{
+        width: 330px;
+        height: 220px;
+    }
+
+    .tarje .tarjets h4{
+        font-weight: 600px;
+    }
+
+    .tarje .tarjets p{
+        padding: 0 1rem;
+        font-size: 16px;
+        font-weight: 300px;
+    }
+    .tarje .tarjets a {
+        font-weight: 500;
+        text-decoration: none;
+        color: #3498db;
+    }
+
+/* estructura orga... */
+
+.estruc {
+    width: 100%;
+    height: 600px;
+    position: relative;
+
+
+}
+.estruc .imges-etructura {
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    box-sizing: border-box;
+    top: 5%;
+    left: 5%;
+    background:url(/imgs/estructura.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.estruc .estructura-txt{
+    width: 38%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    /* background-color: #777777; */
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.estruc .estructura-txt h2{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    color: #000;
+    
+
+}
+.estruc .estructura-txt p{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    position: absolute;
+    font-size: 25px;
+    bottom: 38%;
+}
+
+
+
+/* aspectos juridicos */
+
+.juridicos {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto ;
+    background-color: #777777;
+}
+.juridicos .aspc {
+    width: 330px;
+    height: 200px;
+    border-radius:8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    margin: 40px 20px;
+    background-color: #ffffff;
+    justify-content: space-between;
+/* text-align: center; */
+display: flex;
+flex-direction: column;
+    justify-content: center;
+}
+.juridicos .aspc:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+/* Planes  */
+
+.planes {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+.planes .plan-isq, .plan-dere{
+    width: 30%;
+    height: 230px;
+    /* background-color: #777777; */
+    top: 40%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.planes .plan-isq h2, .plan-dere h2{
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+}
+.planes .plan-isq h2, .plan-dere p{
+    font-family: 'Kalam', cursive;
+}
+.planes .imgs-dere, .imgs-isq {
+    width: 60%;
+    height: 480px;
+    background-color: #0478fc;
+    top: 5%;
+    position: absolute;
+    
+    
+}
+.planes .img3{
+    background: url(/imgs/latinoamerica.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.planes .img2{
+    background: url(/imgs/nacional.avif);
+    background-position: center;
+    background-size: cover;
+}
+.planes .img1{
+    background: url(/imgs/internacional.png);
+    background-position: center;
+    background-size: cover;
+}
+.planes .img4{
+    background: url(/imgs/dmc.avif);
+    background-position: center;
+    background-size: cover;
+}
+.planes .img5{
+    background: url(/imgs/virtual.webp);
+    background-position: center;
+    background-size: cover;
+}
+.planes .plan-isq, .imgs-isq{
+    left: 5%;
+}
+.planes .plan-dere, .imgs-dere{
+    right: 5%;
+}
+
+
+/* DOFA */
+
+.DOFA-back{
+    
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-color: #0d2033;
+}
+.DOFA-back h1{
+   font-size: 80px;
+    color: #ffffff;
+    font-family: 'Caveat', cursive;
+position: absolute;
+left: 450px;
+}
+.DOFA-back .dofa{
+    position: absolute;
+    display: block;
+    width: 880px;
+    height: 530px;
+    margin: 0 auto 0;
+    background-color: #ffffff;
+    bottom:8%;
+    
+    left: 20%;
+    background: url(/imgs/DOFA.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* .DOFA-back .dofa .d{
+    height: 50%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    background-color: red;
+    position: absolute;
+
+}
+
+.DOFA-back .dofa .o{ 
+    height: 50%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background-color: blue;
+    position: absolute;
+}
+.DOFA-back .dofa .f{
+height: 50%;
+width: 50%;
+left: 0;
+bottom: 0;
+background-color: green;
+position: absolute;
+
+}
+
+.DOFA-back .dofa .a {
+    height: 50%;
+width: 50%;
+right: 0;
+bottom: 0;
+background-color: purple;
+position: absolute;
+
+} */
+
+/* Buyer persona */
+
+.buyer {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-color: #777777;
+}
+.buyer .buyerimg{
+    width: 47%;
+    height: 450px;
+    position: absolute;
+    background-color: antiquewhite;
+    bottom: 120px;
+    box-shadow:  4px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+}
+.buyer .buyerimg:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    width: 48%;
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+}
+.buyer .buyer1{
+    right: 30px;
+    background:url(/imgs/buyerInternacional.jpeg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.buyer .buyer2{
+    left: 30px;
+    background:url(/imgs/buyerNacional.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.buyer .buyer-title{
+    width: 70%;
+    height: 70px;
+    position: absolute;
+    top: 28px;
+    left: 220px;
+    /* background-color: #ffffff; */
+    justify-content: center;
+    align-items: center;
+}
+.buyer .buyer-title h2{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+   left: 280px;
+   position: absolute;
+   color: #efefef;
+    
+}
+
+/* analisis numerico */
+.numericos {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto ;
+    background-color: #ffffff;
+}
+.numericos .tarjeta{
+    width: 600px;
+    height: 500px;
+    border-radius:8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    margin: 40px 20px ;
+}
+.numericos .tarjeta:hover{
+    transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.numericos .tarjeta img{
+    width: 600px;
+    height: 280px;
+    object-fit: cover;
+    
+ 
+}
+.numericos .math img{
+    object-fit: fill;
+}
+.numericos .estadistica img{
+    object-fit: fill;
+
+}
+.numericos .mricoeconomia img {
+    object-fit: fill;
+
+}
+.numericos .tarjeta h4{
+    font-weight: 600px;  
+}
+.numericos .tarjeta p{
+    padding: 0 1rem;
+        font-size: 16px;
+        font-weight: 300px;
+}
+.numericos .tarjeta a{
+    font-weight: 500;
+        text-decoration: none;
+        color:#0478fc;
+}
+/* CONTA */
+.conta {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto ;
+    background-color: #777777;
+}
+.conta .analis {
+    width: 600px;
+    height: 500px;
+    border-radius:8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /* text-align: center; */
+    transition: all 0.25s;
+    margin: 40px 20px ;
+    position: relative;
+}
+.conta .analis .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.conta .analis .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.conta .analis .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conta .analis .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 45px;
+    color: #E6F5FF;
+    background: rgba(0,0,0, .4);
+    text-align: center;
+}
+.conta .analis .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.conta .analis .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.conta .analis .back p{
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.conta .analis:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+.conta .analis:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* problema  Y SOLUCION*/
+
+.tercercorte{
+    width: 100%;
+    height: 1400px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto ;
+
+}
+.tercercorte .problema, .propuesta{
+height: 500px;
+width: 65%;
+background-color: #0d2033;
+border-radius:8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    margin: 40px 20px ;
+    position: relative;
+
+}
+.tercercorte .problema{
+    top: 50px;
+ 
+}
+.tercercorte .propuesta{
+    bottom: 50px;
+}
+.tercercorte .problema .face, .propuesta .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    justify-content: center;
+    align-items: center;
+    color: #efefef;
+}
+.tercercorte .problema .front, .propuesta .front{
+    transform: perspective(200px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.tercercorte .problema .front h2, .propuesta .front h2 {
+    font-size: 90px;
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    height: 50%;
+    /* line-height: 45px; */
+    color: #E6F5FF;
+    /* background: rgba(0,0,0, .4); */
+    text-align: center;
+    padding: auto;
+    justify-content: space-between;
+    letter-spacing: 1px;
+
+}
+.tercercorte .problema .back, .propuesta .back{
+    transform: perspective(200px) rotateY(180deg);
+    /* background: rgb(3, 35, 54); */
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    background-color: #777777;
+    
+}
+.tercercorte .problema:hover .face, .propuesta:hover .face{
+    transform: perspective(200px) rotateY(180deg);
+}
+.tercercorte .problema:hover .back, .propuesta:hover .back{
+    transform: perspective(200px) rotateY(360deg);
+    
+}
+.tercercorte .problema .back p, .propuesta .back p {
+    letter-spacing: 1px;
+    width: 100%;
+    height: 70%;
+}
+/* footer */
+.pie-pagina{
+    width: 100%;
+    background-color: #000;
+}
+.pie-pagina .contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.pie-pagina .contenedor .foots figure{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pie-pagina .contenedor .foots figure img{
+    width: 250px;
+    color: #E6F5FF;
+}
+.pie-pagina .contenedor .foots h2{
+    color: #E6F5FF;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .contenedor .foots p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .contenedor .redes_sociales i{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .contenedor .redes_sociales i:hover{
+    color: aqua;
+}
+.pie-pagina .contenedor2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .contenedor2 small{
+    font-size: 15px;
+}
+
+
+
+
+.historia{
+    position: relative;
+    display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.historia h1{
+font-size: 200px;
+font-family: 'Anton', sans-serif;
+
+}
+.historia h2{
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
